@@ -9,6 +9,7 @@ import Confetti from "react-confetti";
 const RentACar = () => {
   const { width, height } = useWindowSize();
   const [carInfo, setCarInfo] = useState<CarInfoProps>({
+    id: 0,
     capacity: 0,
     carTitle: "",
     carType: "",

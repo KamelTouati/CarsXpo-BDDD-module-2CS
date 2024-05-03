@@ -6,6 +6,7 @@ export interface FuelsProps {
 }
 
 export interface CarProps {
+    id: number;
     capacity: number;
     carTitle: string;
     carType: string;
@@ -25,20 +26,11 @@ export interface CarProps {
     transmission: string;
     typeOfclass: string;
     year: string;
-    creator: Creator;
     _id: string;
 }
 
 export interface CarInfoProps extends CarProps {
-    creator?: Creator;
     _id?: string;
-}
-
-export interface CreatorProps {
-    _id: string;
-    email: string;
-    username: string;
-    email: string;
 }
 
 export interface FetchCarProps {

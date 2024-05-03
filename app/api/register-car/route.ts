@@ -42,7 +42,7 @@ export const POST = async (req: Request) => {
       data: {
         carTitle,
         location,
-        rentPrice,
+        rentPrice: parseFloat(rentPrice),
         capacity: parseInt(capacity),
         fuelCapacity: parseInt(fuelCapacity),
         shortDescription,
