@@ -70,12 +70,17 @@ export const POST = async (req: Request) => {
 
     //all photos urls
     const photosUrl = await Promise.all(photoUploadPromises);
+    // console.log("photosUrl:", photosUrl);
 
+    // console.log("savedCar.id:", savedCar.id);
+    
     //create new car on mongodb
     const newCar = new Car({
-      carId: savedCar.id, // assuming you have a carId field to link the car to the images
+      carId: savedCar.id,
       imageFiles: photosUrl,
     });
+    console.log("newCar:", newCar);
+    
     //save new car
     await newCar.save();
 

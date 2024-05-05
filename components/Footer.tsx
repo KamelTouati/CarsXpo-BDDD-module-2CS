@@ -12,13 +12,10 @@ const Footer = () => {
                 <span className="text-xl md:text-3xl text-indigo-700 font-bold dark:text-white">
                   {" "}
                   <p className="mt-4">
-                    CarsXpo 2023 <br /> All Rights Reserved &copy;
+                    CarsXpo 2023 <br />
                   </p>
                 </span>
               </Link>
-              <p className="mt-4">
-                Carhub 2023 <br /> All Rights Reserved &copy;
-              </p>
             </div>
             <div className="flex  items-center justify-between flex-wrap md:justify-evenly w-full flex-1 gap-3">
               {footerLinks.map(({ title, links }, i) => (

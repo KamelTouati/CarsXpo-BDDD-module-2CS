@@ -14,6 +14,7 @@ export default function Home({ searchParams }: { searchParams: FetchCarProps }) 
       try {
         const res = await fetch(`/api/car?model=${model}&limit=${limit}&fuelType=${fuelType}&year=${year}&manufacturer=${manufacturer}`);
         const data = await res.json();
+        console.error(data);
         setAllCars(data?.reverse());
       } catch (error) {
         console.error(error);
